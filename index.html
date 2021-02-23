@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <!--nav-bar button-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+            integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+            crossorigin="anonymous"
+        />
+        <title>modal</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="profile.jpg" alt="user" />
+            </div>
+
+            <ul>
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> Portfolio </a></li>
+                <li><a href="#"> Blog </a></li>
+                <li><a href="#"> Contact me </a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <button id="toggle" class="toggle">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <h1>Landing Page</h1>
+            <p>welcom this page 🐈</p>
+            <button class="cta-btn" id="open">Sign Up</button>
+        </header>
+
+        <div class="container">
+            <h2>What is this landing page about?</h2>
+            <p>It's about landing page.</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio officia ipsa. adipisicing elit. Repellat eaque delectus explicabo qui reprehenderit? Earum.Cum dignissimos
+                possimus et non provident facilis saepe!
+            </p>
+            <h2>Tell Me More</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eaque delectus explicabo qui reprehenderit? Earum.</p>
+            <h2>Benefits</h2>
+            <ul>
+                <li>Study Everyday</li>
+                <li>better than today</li>
+                <li>trust and make it</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quam nostrum, equatur?</p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal-container" id="modal">
+            <div class="modal">
+                <button id="close" class="close-btn">
+                    <i class="fa fa-times"></i>
+                </button>
+
+                <div class="modal-header">
+                    <h3>Sign Up</h3>
+                </div>
+
+                <div class="modal-content">
+                    <p>Register with us and enjoy your time ❤</p>
+                    <form class="modal-form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" class="form-input" type="text" placeholder="Enter Name" />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" class="form-input" type="email" placeholder="Enter Email" />
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input id="password" class="form-input" type="password" placeholder="Enter Password" />
+                        </div>
+                        <div>
+                            <label for="password2">Confirm Password</label>
+                            <input id="password2" class="form-input" type="password" placeholder="Confirm Password" />
+                        </div>
+                        <input class="submit-btn" type="submit" value="Submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
